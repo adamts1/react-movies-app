@@ -1,0 +1,9 @@
+[
+    { "firstName": "Jim", "lastName": "Carey", "birthYear": 1962, "img": "img/Jimcarey.jpg", "link": "https://www.imdb.com/name/nm0000120/" },
+    { "firstName": "Tom", "lastName": "Cruise", "birthYear": 1962, "img": "img/Tom_Cruise.jpg", "link": "https://www.imdb.com/name/nm0000129/" },
+    { "firstName": "Gary", "lastName": "Oldman", "birthYear": 1958, "img": "img/Gary_Oldman.jpg", "link": "https://www.imdb.com/name/nm0000198/" }
+]
+
+
+
+
