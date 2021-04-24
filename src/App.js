@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react";
 import ActorsPage from '../src/pages/Actors/ActorsPage';
-import MoviesPage from '../src/pages/Movies/MoviesPage';
+import MoviesPage from '../src/pages/movies/MoviesPage';
 import ActorsModel from '../src/model/ActorsModel';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
