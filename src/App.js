@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-        <ActorsPage {...actors}/>
+        {/* <ActorsPage {...actors}/> */}
         <MoviesPage/>
     </div>
   ); 
