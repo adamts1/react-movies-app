@@ -16,7 +16,9 @@ function MoviesPage() {
     function searchInputWarper(newSearchText) {
         setSearchInput(newSearchText);
         if (newSearchText) {
+            
             // Here we should call TMDB
+
             const searchURL = "http://api.themoviedb.org/3/search/movie?api_key=9637e8ca63c566befcabb9f7fc353c29&query=" + newSearchText;
             axios.get(searchURL).then(response => {
                 setResults(response.data.results);
