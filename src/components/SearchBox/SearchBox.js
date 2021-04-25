@@ -3,7 +3,6 @@ import { Form, ListGroup } from 'react-bootstrap';
 
 
 function SearchBox({onChange, searchInput ,results, onSelectedResult}) {
-    console.log(results)
     return (
         <div className="c-searchbox">
             <Form.Control type="text" placeholder="placeholder" value={searchInput} onChange={e => onChange(e.target.value)}/>

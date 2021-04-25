@@ -46,7 +46,7 @@ function addMovie(resultIndex) {
                     searchInput={searchInput}
                 />
                 <Row>
-                    {movies.map(movie => <Col lg={3} md={6}><MovieCard movie={movie}/></Col>)}
+                    {movies.map(movie => <Col lg={12} ><MovieCard movie={movie}/></Col>)}
                 </Row>
             </Container>
         </div>
