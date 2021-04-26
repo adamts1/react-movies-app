@@ -1,0 +1,15 @@
+.c-footer {
+    
+  --color-1: deepskyblue;
+  --color-2: lightgreen;
+ 
+  background: linear-gradient(170deg, var(--color-1), var(--color-2));
+  margin-bottom: -50px;
+  color: white;
+  /* text-align: center; */
+}
+
+
+.c-footer h2 {
+    margin: 0 auto;
+}

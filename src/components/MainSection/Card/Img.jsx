@@ -13,7 +13,6 @@ function Img(props) {
 
     return (
         <div>
-           {/* <img src={process.env.PUBLIC_URL + '/' +props.pic} alt="" onClick={()=>setRedirectTo(props.index)} /> */}
            <Image src={process.env.PUBLIC_URL + '/' +props.pic} alt="" onClick={()=>setRedirectTo(props.index)}   />
         </div>
     )
