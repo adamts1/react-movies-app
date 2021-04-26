@@ -29,12 +29,22 @@ function MoviesPage() {
     }
 
 function addMovie(resultIndex) {
-    setMovies(movies.concat(new MovieModel(results[resultIndex].title, results[resultIndex].release_date, results[resultIndex].overview, results[resultIndex].popularity, results[resultIndex].poster_path)));
-    console.log(movies);  
+    console.log(results[resultIndex].id)
+    const credit =  axios.get("https://api.themoviedb.org/3/movie/"+results[resultIndex].id+"/credits?api_key=9637e8ca63c566befcabb9f7fc353c29&query&language=en-US");
+    const details = axios.get("https://api.themoviedb.org/3/movie/"+results[resultIndex].id+"?api_key=9637e8ca63c566befcabb9f7fc353c29&language=en-US");
+
+    Promise.all([credit, details]).then((response) => {
+        console.log(response[0].data.crew[0].name);
+        setMovies(movies.concat(new MovieModel(results[resultIndex].title, response[0].data.crew[0].name, results[resultIndex].release_date, results[resultIndex].overview, results[resultIndex].popularity, results[resultIndex].poster_path)));
+
+
+      });
+    
     setResults([]);
     setSearchInput("");
 
 }
+
 
     return (
         <div className="c-movies">

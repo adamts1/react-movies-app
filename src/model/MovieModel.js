@@ -1,6 +1,7 @@
 class MovieModel {
-    constructor(title, relese, overview, popularity, pic ) {
+    constructor(title, director, relese, overview, popularity, pic ) {
         this.title = title;
+        this.director = director;
         this.relese = relese;
         this.overview  = overview;
         this.popularity = popularity;

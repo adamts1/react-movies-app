@@ -25,7 +25,7 @@ function CardWarper({actors, inputVal, sortBy}) {
             }
           });
     
-    const actorsCard = filtererdActors.map((actor, key) => <Card key={key} {...actor} birthDate={actor.ActorAge()} />)    
+    const actorsCard = filtererdActors.map((actor, index) => <Card key={index} index={index} {...actor} birthDate={actor.ActorAge()} />)    
     
 
     if(actorsCard.length != 0 ) {

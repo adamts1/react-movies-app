@@ -7,18 +7,20 @@ function MovieCard({ movie }) {
         <div>
             <Card className='c-moviecard'>
                 <Row>      
-                 <Col>
+                 <Col xs={4} md={4} lg={3}>
                 <Card.Img variant="top" src={movie.pic} />
                 </Col>   
                 <Col>
                 <Card.Body>
                     <Card.Title>{movie.title}</Card.Title>
+                    <Card.Title>{movie.director}</Card.Title>
                     <Card.Text>
                         {movie.overview}
                     </Card.Text>
+                    <Card.Title>{movie.popularity}</Card.Title>
                 </Card.Body>
                 </Col>
-                <Card.Footer className="text-muted">{movie.popularity}</Card.Footer>
+                
                 </Row>
             </Card>
         </div>

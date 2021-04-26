@@ -1,7 +1,9 @@
 import {useState,useEffect} from "react";
 import ActorsPage from '../src/pages/Actors/ActorsPage';
 import MoviesPage from '../src/pages/movies/MoviesPage';
+import HomePag from '../src/pages/Main/HomePage';
 import ActorsModel from '../src/model/ActorsModel';
+import ActorDetails from './pages/ActorDetails/AactorDetails'
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,7 +24,9 @@ function App() {
     <div>
       <HashRouter>
         <Switch>
+          <Route exact path="/"><HomePag/></Route>
           <Route exact path="/actors"><ActorsPage {...actors}/></Route>
+          <Route exact path="/actors/:index"><ActorDetails actors={actors}/></Route>
           <Route exact path="/movies"><MoviesPage/></Route>
         </Switch>
       </HashRouter>
